@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="stylepro8.css">
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div id="main-container">
+        <div id="container">
+
+            <div class="row">
+                <input type="text" id="record">
+            </div>
+
+            <div class="row">
+                <input type="text" id="screen">
+            </div>
+
+            <div class="row">
+                <div id="col-1">
+                    <button class="btn" id="9" onclick="nine()">9</button>
+                    <button class="btn" id="8" onclick="eight()">8</button>
+                    <button class="btn" id="7" onclick="seven()">7</button>
+                    <button class="btn" id="6" onclick="six()">6</button>
+                    <button class="btn" id="5" onclick="five()">5</button>
+                    <button class="btn" id="4" onclick="four()">4</button>
+                    <button class="btn" id="3" onclick="three()">3</button>
+                    <button class="btn" id="2" onclick="two()">2</button>
+                    <button class="btn" id="1" onclick="one()">1</button>
+                    <button class="btn" id="0" onclick="zero()">0</button>
+                    <button class="btn" id="." onclick="point()">.</button>
+                    <button class="btn" id="ans" onclick="result()">=</button>
+                </div>
+
+                <div id="col-2">
+                    <button class="btnop" id="clear" onclick="clearsc()">CE</button>
+                    <button class="btnop" id="del" onclick="del()">Del</button>
+                    <button class="btnop" id="divide" onclick="divide()">/</button>
+                    <button class="btnop" id="multiply" onclick="multiply()">x</button>
+                    <button class="btnop" id="add" onclick="sum()">+</button>
+                    <button class="btnop" id="sub" onclick="subtract()">-</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scriptpro8.js"></script>
+</body>
+
+</html>
