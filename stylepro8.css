@@ -1,104 +1,76 @@
 
 
-body{
+*{
     margin: 0;
-    background-color: #3498db;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    text-align: center;
-    color: white;
-    text-decoration: underline;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-
-#main-container{
-    display: flex;    
-    border: 2px solid black;
-    width: 400px;
-    height: auto;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-
-#container{
+body{
+    min-height: 100vh;
+    background: #efeff2;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    background: #22252D;
+    overflow: hidden;
+}
+
+form input{
     width: 100%;
-}
-
-.row{
-    display: flex;
-}
-
-.row #screen{
-    width: 98%;
-    height: 60px;
-    font-size: 28px;
-    border: 2px solid black;
+    height: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+    background: #000;
     text-align: right;
+    pointer-events: none;
 }
 
-.row #record{
-    width: 98%;
-    height: 30px;
-    font-size: 18px;
-    border: 2px solid black;
-    text-align: right;
-    background-color: black;
-    color: white;
-}
-
-#col-1{
+.buttons{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-    width: 70%;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    background-color: steelblue;
-    border: 2px solid black;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-#col-1 .btn{
+button{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid black;
     width: 60px;
-    height: 50px;
-    border: 1px solid black;
-    background-color: lightgray;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
     border-radius: 5px;
-    margin: 10px;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
+    cursor: pointer;
 }
 
-#col-1 #ans{
-    background-color: rgb(25, 206, 25);
+.btn-yellow{
+    background: rgb(245, 146, 62);
     color: white;
-    font-size: 30px;
 }
 
-
-#col-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;    
-    width: 30%;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    background-color:cadetblue ;
-    border: 1px solid black;
+.btn-grey{
+    background: rgb(224 , 224, 224);
+    /* color: white; */
 }
 
-#col-2 .btnop{
-    width: 60px;
-    height: 40px;
-    border: 1px solid black;
-    background-color: darkcyan;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
+.btn-equal{
+background-color: green;
+    /* color: white; */
+}
+
+.btn-clear{
+    background-color: red;
 }
